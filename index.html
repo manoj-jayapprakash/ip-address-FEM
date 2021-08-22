@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    />
+    <link rel="stylesheet" href="./src/css/main.css" />
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      defer
+    ></script>
+    <script src="./index.js" defer type="module"></script>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>IP Address Tracker</title>
+  </head>
+  <body>
+    <div class="tracker">
+      <section class="intro">
+        <h1 class="title txt-center">IP Address Tracker</h1>
+        <div class="search txt-center">
+          <input
+            type="search"
+            name="search"
+            id="searchbar"
+            class="br-15"
+            placeholder="Search for any IP address or domain"
+          />
+          <img
+            src="./src/images/icon-arrow.svg"
+            alt="Search Ip address"
+            class="arrow"
+          />
+        </div>
+      </section>
+      <main class="details br-15 shadow">
+        <!-- <div class="details__item">
+          <p class="details__label">IP Address</p>
+          <p class="details__value">IP Address</p>
+        </div>
+        <div class="details__item">
+          <p class="details__label">Location</p>
+          <p class="details__value">IP Address,IP Address,IP Address</p>
+        </div>
+        <div class="details__item">
+          <p class="details__label">Timezone</p>
+          <p class="details__value">IP Address</p>
+        </div>
+        <div class="details__item">
+          <p class="details__label">ISP</p>
+          <p class="details__value">IP Address,IP Address,IP Address</p>
+        </div> -->
+      </main>
+      <div class="mapView"></div>
+    </div>
+
+    <footer class="attribution txt-center">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://www.frontendmentor.io/profile/manojmj18"
+        >Manoj Jayapprakash</a
+      >.
+    </footer>
+  </body>
+</html>

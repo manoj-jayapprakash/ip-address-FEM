@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+  color: hsl(0, 0%, 17%);
+  font-size: clamp(1rem, 0.8092rem + 0.8142vw, 1.2rem);
+}
+
+.br-15 {
+  border-radius: 15px;
+}
+
+.txt-center {
+  text-align: center;
+}
+
+.shadow {
+  box-shadow: 0 50px 50px -25px hsla(0, 0%, 0%, 10%);
+}
+
+.hidden {
+  display: none !important;
+}
+
+.error {
+  color: red;
+  font-weight: 500;
+}
+
+.tracker {
+  position: relative;
+  min-height: 100vh;
+}
+
+#map {
+  min-height: 65vh;
+  z-index: -1;
+}
+
+.intro {
+  min-height: 35vh;
+  background-image: url(../images/pattern-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.title {
+  color: white;
+  font-weight: 500;
+  padding: 1rem;
+  font-size: clamp(1.6rem, 2.8vw, 2rem);
+}
+
+.search {
+  position: relative;
+  padding: 1rem 0;
+  width: min(100%, 600px);
+  margin: 0 auto;
+}
+
+#searchbar {
+  width: 90%;
+  padding: 1rem;
+  border: none;
+  outline: none;
+  font-size: clamp(0.8rem, 1.25vw, 1.15rem);
+}
+
+.arrow {
+  position: absolute;
+  background-color: black;
+  padding: clamp(1.05rem, 1.5vw, 1.25rem);
+  top: 16px;
+  right: 15px;
+  border-radius: 0 15px 15px 0;
+}
+
+.details {
+  height: fit-content;
+  width: min(90%, 1100px);
+  margin: 0 auto;
+  padding: 0.5rem 1rem;
+  position: absolute;
+  inset: 150px 0 0 0;
+  background-color: white;
+  z-index: 401;
+}
+
+.details__item {
+  margin: 0.5rem 0.5rem 1rem 0.5rem;
+  text-align: center;
+}
+
+.details__label {
+  color: hsl(0, 0%, 59%);
+  font-size: clamp(0.6rem, 1vw, 0.75rem);
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1.3px;
+}
+
+.details__value {
+  margin-top: 5px;
+  font-size: clamp(1.15rem, 2vw, 1.5rem);
+  font-weight: 500;
+}
+
+@media (min-width: 768px) {
+  .intro {
+    min-height: 30vh;
+  }
+
+  #searchbar,
+  .arrow {
+    cursor: pointer;
+  }
+
+  .arrow:hover {
+    background-color: hsl(0, 0%, 25%);
+  }
+
+  .details {
+    display: flex;
+    padding: 1rem;
+    inset: 200px 0 0 0;
+  }
+
+  .details__item {
+    text-align: left;
+    padding: 0 1rem;
+  }
+  .details__item:not(:last-child) {
+    border-right: 1px solid hsla(0, 0%, 0%, 15%);
+  }
+}
